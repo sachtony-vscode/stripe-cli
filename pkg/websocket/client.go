@@ -14,6 +14,7 @@ import (
 	ws "github.com/gorilla/websocket"
 	log "github.com/sirupsen/logrus"
 
+	"github.com/stripe/stripe-cli/pkg/stripe"
 	"github.com/stripe/stripe-cli/pkg/useragent"
 )
 
@@ -482,10 +483,16 @@ func newWebSocketDialer(unixSocket string) *ws.Dialer {
 			Subprotocols:     subprotocols[:],
 		}
 	} else {
+		tlsConfig, err := stripe.GetTLSConfig()
+		if err != nil {
+			log.Fatal(err)
+		}
+
 		dialer = &ws.Dialer{
 			HandshakeTimeout: 10 * time.Second,
 			Proxy:            http.ProxyFromEnvironment,
 			Subprotocols:     subprotocols[:],
+			TLSClientConfig:  tlsConfig,
 		}
 	}
 
