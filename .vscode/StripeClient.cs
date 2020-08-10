@@ -36,8 +36,8 @@ namespace Sachtony
 
             var BankaccountCountryOptions = {
                 Currency = "EUR",
-                AccountNumber = "42466924",
-                RoutingNumber = "209778",
+                AccountNumber = "",
+                RoutingNumber = "",
             };
 
             var service = new BalanceService();
@@ -99,13 +99,13 @@ namespace Sachtony
 
             var options = new PersonUpdateOptions
             {
-                FirstName = "Linh  ",
+                FirstName = "Tony",
                 LastName = "Duong",
                 Dob = new DobOptions
                 {
-                    Day = 12,
-                    Month = 12,
-                    Year = 1983,
+                    Day = ,
+                    Month = ,
+                    Year = ,
                 },
                 Address = new AddressOptions
                 {
@@ -116,7 +116,7 @@ namespace Sachtony
                     Country = "VN",
                 },
                 SSNLast4 = "9999",
-                Email = "admin@sachtony.com",
+                Email = "admin@stripe.sachtony.com",
                 Relationship = new PersonRelationshipOptions
                 {
                     AccountOpener = true,
