@@ -5,7 +5,7 @@ using Twilio.TwiML.Voice;
 
 namespace Sachtony
 {  
-    class Sim
+    class Stripe
     {
        public static global::System.Object StripeAccount { get; private set; }
         public static global::System.Object Console { get; private set; }
