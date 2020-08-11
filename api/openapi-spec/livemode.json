@@ -1,6 +1,5 @@
 {
   "Get": "/v1/balance",
-  {
   "object": "balance",
   "available": [
     {
