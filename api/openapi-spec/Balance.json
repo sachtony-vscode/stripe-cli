@@ -1,8 +1,15 @@
 {
+  "Enpoint": 
+  {
+    "Get": "/v1/balance"
+    "stripe.Key : "pk_test_51HDWeGHZh9rsmulyw83VUbLCEcEgPkAdmy2wslllW7pSUtMtwPm81ByYcBqgTCQoLky6ebgOxPQqLJP2L6fyuI7t00sDPc2cys"
+      // Since Go is strongly typed,
+      // the version is fixed in the library.
+  },
   "object": "balance",
   "available": [
     {
-      "amount": 0,
+      "amount": 5000,
       "currency": "usd",
       "source_types": {
         "card": 0
@@ -12,12 +19,12 @@
   "issuing": {
     "available": [
       {
-        "amount": 0,
+        "amount": 5000,
         "currency": "usd"
       }
     ]
   },
-  "livemode": false,
+  "livemode": true,
   "pending": [
     {
       "amount": 0,
