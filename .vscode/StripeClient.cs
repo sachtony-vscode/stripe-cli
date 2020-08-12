@@ -151,7 +151,7 @@ namespace Sachtony
                         Country = "VN",
                     },
                 },
-                Email = "jenny.rosen@shop.sachtony.com",
+                Email = "jenny.rosen@shops.sachtony.com",
                 PhoneNumber = "+18008675309",
                 Name = "Jenny Rosen",
                 Status = "active",
